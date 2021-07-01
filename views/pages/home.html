@@ -1,0 +1,16 @@
+{% extends "pages/index.html" %}
+{% block content %}
+    <h1>{{home.heading}}</h1>
+    <br>
+    <img src="{{ home.img }}" class="img-respons"/>
+    <br>
+    <div class="jumbotron">
+        <div class="row">                    
+            <div class="col-md-6">
+                <img class="fit-picture img-respons"
+                src="{{ home.img2 }}"
+                alt="Ursus">
+            </div>                    
+        </div>
+    </div>
+{%endblock %}

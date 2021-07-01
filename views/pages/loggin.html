@@ -1,0 +1,19 @@
+{% extends "pages/index.html" %}
+{% block content %}
+  <div class="row">   
+    <form action="http://localhost:8080/api/auth" method="POST" class="col-md-6 needs-validation" novalidate>        
+         <div class="col-md-12">
+          <label for="email" class="col-sm-2 col-form-label">Email</label>        
+          <input type="email" class="form-control" name="email" id="mail" placeholder="example@example.com"  required>
+        </div>
+         <div class="col-md-12">
+          <label for="password" class="col-sm-2 col-form-label">Password</label>
+          <input type="password" class="form-control" name="password" id="password"  placeholder="Password"required>
+        </div>
+         <div class="col-md-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>    
+    </form>
+  
+  </div>
+{%endblock %}
